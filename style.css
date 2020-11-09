@@ -1,0 +1,119 @@
+/* colors1 
+main container: #222831
+button: #d65a31
+footer: #393e46
+*/
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+ 
+
+     /* font-family: 'Rubik', sans-serif;  */
+     font-family: 'Source Sans Pro', sans-serif; 
+     font-weight: 700;
+
+}
+.flex{
+    display: flex;
+}
+.vertical{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.padding-left{
+    padding-left: 1rem;
+}
+.padding-side{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.full-height{
+    height: 100%;
+}
+.full-width{
+    width: 100%;
+}
+.hero-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("solnedgång.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+   
+.text-container{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+   
+   
+    
+.menu-bar{
+    color: white;
+}
+   
+h1{
+    font-family: 'Rubik', sans-serif; 
+    
+}
+button{
+    padding: 0.5rem;
+    color: white;
+    background-color: #d65a31;
+    border: none;
+    border-radius: 0.1rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    max-width: 10rem;
+    padding-left: 1rem;
+   
+   
+}
+button:hover{
+    opacity: 1;
+}
+.low-header{
+    height: 5rem;
+    background-color: #000000;
+    
+}
+   
+.about-container{
+    min-height: 60rem;
+    background-color:#222831;
+    color: white;
+}
+
+.portrait-container{
+    max-width: 20rem;
+    padding-top: 1rem;
+}
+.water-img{
+    width: 100%;
+}
+.footer{
+    min-height: 7rem;
+    background-color: #393e46;
+    border-top: solid 0.1rem #ffac41;
+    
+}
+   
+    
