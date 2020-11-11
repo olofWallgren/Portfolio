@@ -35,6 +35,10 @@ p{
     justify-content: center;
     align-items: center;
 }
+.space-around{
+    justify-content: space-around;
+    align-items: center;
+}
 .margin-top{
     margin-top:0.5rem;
 }
@@ -44,6 +48,12 @@ p{
 .padding-side{
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.padding-top{
+    padding-top: 1rem;
+}
+.padding-bottom{
+    padding-bottom: 1rem;
 }
 .relative{
     position: relative;
@@ -60,17 +70,17 @@ p{
 .hero-container{
     background-color: #222831 ;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bilder/solnedgång.JPG"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
    
    
 .text-container{
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: white;
 }
 
@@ -78,6 +88,11 @@ p{
     
 .menu-bar{
     color: white;
+    position: fixed;
+    background-color: #222831 ;
+}
+.menu-border{
+    border-bottom: solid 1.5px  #d65a31;
 }
    
 
@@ -113,10 +128,15 @@ p{
    
 .about-container{
     min-height: 60rem;
-    background-color: #393e46;
+    background-color: #222831;
     color: white;
 }
-
+.border{
+    max-width:90%;
+    width: 100%;
+    background-color: white;
+    border-top: solid 1px #d65a31;
+}
 
 
 
@@ -143,7 +163,12 @@ p{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.projekt-rubrik{
+    padding-bottom: 2rem;
+}
 ul{
     padding-right: 5rem;
     list-style-type:none;
+    font-size: 20px;
+    padding-left: 2rem;
 }
