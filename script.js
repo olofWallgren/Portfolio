@@ -1,23 +1,15 @@
- window.onload = startProgram;
+//start page, change years
 
- function startProgram(){
-     animateSlide()
- }
- function animateSlide(){
-     setInterval(showImages, 4000);
- }
- function showImages(){
-
-     const images = document.querySelectorAll('.slider-container > img')
-     console.log(images)
-
-     for (let i = 0; i < images.length; i++ ) {
-         if (images[i].classList.contains('show') ){
-             images[i].classList.remove('show');
-             let nextIndex = (i + 1) % images.length;
-             images[nextIndex].classList.add('show');
-             break;
-         }
-
-     }
- }
+window.onload = startPage;
+function startPage(){
+    let years = diff_years(new Date, new Date(1987,2,6))
+   
+    document.getElementById('age').innerText = years;
+    startSlideshowAnimation();
+}
+function diff_years(dt2, dt1) 
+{
+ let diff =(dt2.getTime() - dt1.getTime()) / 1000;
+  diff /= (60 * 60 * 24);
+ return Math.abs(Math.round(diff/365.25))-1;
+};

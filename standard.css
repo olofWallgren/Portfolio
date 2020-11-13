@@ -1,0 +1,51 @@
+.flex{
+    display: flex;
+}
+.vertical{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.space-around{
+    justify-content: space-around;
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.margin-top{
+    margin-top:0.5rem;
+}
+.padding-left{
+    padding-left: 1rem;
+}
+.padding-side{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.padding-top{
+    padding-top: 1rem;
+}
+.padding-bottom{
+    padding-bottom: 1rem;
+}
+.padding-bottom5{
+    padding-bottom: 5rem;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.full-height{
+    height: 100%;
+}
+.full-width{
+    width: 100%;
+}

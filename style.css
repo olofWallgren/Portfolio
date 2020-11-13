@@ -4,171 +4,159 @@ button: #d65a31
 footer: #393e46
 */
 
-
-body, html {
-    height: 100%;
-    margin: 0;
- 
-
-     /* font-family: 'Rubik', sans-serif;  */
-     font-family: 'Source Sans Pro', sans-serif; 
-     font-weight: 700;
-
-}
-h1{
-    font-family: 'Rubik', sans-serif; 
-    
-}
-p{
-    margin: 0;
-}
-.flex{
-    display: flex;
-}
-.vertical{
-    flex-direction: column;
-}
-.row{
-    flex-direction: row;
-}
-.center{
-    justify-content: center;
-    align-items: center;
-}
-.space-around{
-    justify-content: space-around;
-    align-items: center;
-}
-.margin-top{
-    margin-top:0.5rem;
-}
-.padding-left{
-    padding-left: 1rem;
-}
-.padding-side{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.padding-top{
-    padding-top: 1rem;
-}
-.padding-bottom{
-    padding-bottom: 1rem;
-}
-.relative{
-    position: relative;
-}
-.absolute{
-    position: absolute;
-}
-.full-height{
-    height: 100%;
-}
-.full-width{
-    width: 100%;
-}
-.hero-container{
-    background-color: #222831 ;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bilder/solnedgång.JPG"); */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-}
-   
-   
-.text-container{
-    /* text-align: center; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    color: white;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  /* font-family: 'Rubik', sans-serif;  */
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
 }
 
-   
-    
-.menu-bar{
-    color: white;
-    position: fixed;
-    background-color: #222831 ;
+h1 {
+  font-family: "Rubik", sans-serif;
 }
-.menu-border{
-    border-bottom: solid 1.5px  #d65a31;
+p {
+  margin: 0;
 }
-   
+.menu-bar {
+  color: white;
+  position: fixed;
+  background-color: #000000;
+}
+.hero-container {
+  background: radial-gradient(
+      circle closest-corner at center 325px,
+      #222831,
+      black 20%
+    )
+    no-repeat;
+  transition: all 0.4s ease ease-in-out;
+}
+.hero-container:hover {
+  background: radial-gradient(
+      circle closest-corner at center 325px,
+      #222831,
+      black 60%
+    )
+    no-repeat;
+}
 
+.text-container {
+  color: white;
+}
 
-   
-   
+.about-container {
+  min-height: 80rem;
+background-color: rgba(0, 0, 0, 0);
+  color: white;
+   /* background: radial-gradient(
+      circle closest-corner at center 325px,
+      #222831,
+      black 60%
+    )
+    no-repeat;  */
+}
+.content-section {
+  min-height: 50rem;
+  color: white;
+  background: radial-gradient(
+      circle closest-corner at center 325px,
+      #222831,
+      black 60%
+    )
+    no-repeat;
+  transition: all 0.4s ease ease-in-out;
+}
+/*about me section*/
+.content-section:hover {
+  background: radial-gradient(
+      circle closest-corner at center 325px,
+      #222831,
+      black 60%
+    )
+    no-repeat;
+}
+.rubrik-section {
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+.projekt-rubrik {
+  padding-bottom: 2rem;
+}
+.about-rubrik {
+  padding-left: 14rem;
+  background-color: black;
+}
+ul {
+  padding-right: 5rem;
+  list-style-type: none;
+  font-size: 20px;
+  padding-left: 2rem;
+}
+.portrait-container {
+}
+.portrait-img {
+  object-fit: cover;
+  max-width: 15rem;
+  border-radius: 1rem;
+  filter: grayscale(100%);
+}
+.border {
+  max-width: 90%;
+  width: 100%;
+  background-color: white; 
+    border-top: solid 2px#393e46;  
+}
+
 /*buttons*/
 
-.button-background{
-    padding: 1rem;
-    border-color: #d65a31 ;
-    border-radius: 0.2rem;
-    border-style: solid;
-    background-color: #222831;
-    color: white ;
-    
+.button-background {
+  padding: 1rem;
+  border-color: #d65a31;
+  border-radius: 0.2rem;
+  border-style: solid;
+  background-color: #222831;
+  color: white;
 }
-.button-hero{
-    padding: 1rem;
-    border-color: #d65a31 ;
-    border-radius: 0.3rem;
-    border-style: solid;
-    background-color: rgba(0, 0, 0, 0.1);
-    color:white;
-    margin-top: 5rem;
-    font-family:'Source Sans Pro', sans-serif ;
-    font-size: 16px;
-    font-weight: 700;
+.button-hero {
+  padding: 1rem;
+  border-color: #d65a31;
+  border-radius: 0.3rem;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-top: 5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
-
-    
-
-   
-.about-container{
-    min-height: 60rem;
-    background-color: #222831;
-    color: white;
+button {
+  padding: 1rem;
+  border-color: #d65a31;
+  border-radius: 0.3rem;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
-.border{
-    max-width:90%;
-    width: 100%;
-    background-color: white;
-    border-top: solid 1px #d65a31;
+.menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* box-shadow:5px 5px 15px #6b6b6b ; */
+  box-shadow: 5px 5px 20px #6b6b6b;
+  transition: ease-in-out 0.3s;
 }
-
-
 
 /*material icons*/
-.material-icons.md-36{
-    font-size: 48px;
-    color:  #d65a31 ;
-}
-   
-    
-/* slide */
-   
- .picture-section{
-     padding-top: 5rem;
-     
- }
- .imgSlideOne{
-    max-width: 50rem;
-    border-radius: 00.2rem;
 
- }
-.rubrik-section{
-    font-size: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.material-icons.md-36 {
+  font-size: 48px;
+  color: #d65a31;
 }
-.projekt-rubrik{
-    padding-bottom: 2rem;
-}
-ul{
-    padding-right: 5rem;
-    list-style-type:none;
-    font-size: 20px;
-    padding-left: 2rem;
+.black{
+    background-color: black;
 }

@@ -1,101 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="standard.css" />
+    <link rel="stylesheet" href="gradient.css" />
+    <link rel="stylesheet" href="slideShow.css" />
+    <link rel="stylesheet" href="zoom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
-  <div class="menu-bar flex row center full-width padding-bottom">
-    <div class="padding-side padding-top"><p class="menu-border">Hem</p></div>
-    <div class="padding-side padding-top"> <p class="menu-border">Om mig</p></div>
-    <div class="padding-side padding-top"><p class=" menu-border">Projekt</p></div>
-  </div>
+  </head>
+  <body class="" >
+    <div class="menu-bar flex row center full-width padding-bottom">
+      <div class="padding-side padding-top"><p class="zoom">Hem</p></div>
+      <div class="padding-side padding-top">
+        <p class="zoom">Om mig</p>
+      </div>
+      <div class="padding-side padding-top">
+        <p class="zoom">Projekt</p>
+      </div>
+    </div>
     <div class="hero-container full-height flex vertical center">
-       
-      <div class="text-container  flex vertical center">
-        <h1 style="font-size:50px">Front-end Developer </h1>
-        <div class="margin-top flex vertical center ">
-          <p>Studerande Front-End Developer på Medieinstitutet i Göteborg. </p> <br><p>Examen våren 2022 </p>
+      <div class="text-container flex vertical center">
+        <h1 style="font-size: 50px">Front-end Developer</h1>
+        <div class="margin-top flex vertical center">
+          <p>Studerande Front-End Developer på Medieinstitutet i Göteborg.</p>
+          <br />
+          <p>Examen våren 2022</p>
         </div>
-       
-        <button class="button-hero ">Kontakta mig</button>
-       
+
+        <button class="button-hero button-zoom">Kontakta mig</button>
       </div>
     </div>
     <!-- <div class="low-header full-width">
         
     </div> -->
-    
-    <div class="about-container ">
-      <div class="flex vertical center "> <div class="border"></div></div>
-     
-      
-     <div class="flex row center">
-      <div class="rubrik-section flex vertical ">
-        <p class="projekt-rubrik">Mina Projekt:</p>
-        <div>  
-          <ul>
-            <li>Titel: &ensp;Ethele`s</li>
-            <br>
-            <li>Beskrivning:  &ensp; Göra en remake med fokus på responsivitet</li>
-            <br>
-            <li>Utmaning: &ensp; Att få sidan snygg och responsiv.</li>
-            <br>
-            <li>Layout:&ensp; Css Grid</li>
-          </ul>
-      </div>
-      
-      </div>
-      <div class="flex row center">
-        
-        <div class="picture-section full-width flex center">
+
+     <!-- <div class="about-container">  -->
+      <div class="black flex vertical center"><div class="border css-gradient"></div></div>
+      <p class="about-rubrik rubrik-section">Mina Projekt:</p>
+      <div class="content-section flex row center">
+        <div class="rubrik-section flex vertical">
           
-          <span class="material-icons md-36">
-            arrow_back_ios
-            </span>
-          <div class="picture-slide">
-            
-            <img class="imgSlideOne" src="./bilder/projekt-bild1.png" alt="">
-            
+          <div>
+            <ul>
+              <li>Titel: &ensp;Ethele`s</li>
+              <br />
+              <li>
+                Beskrivning: &ensp; Göra en remake med fokus på responsivitet
+              </li>
+              <br />
+              <li>Utmaning: &ensp; Att få sidan snygg och responsiv.</li>
+              <br />
+              <li>Layout:&ensp; Css Grid</li>
+            </ul>
           </div>
-          <span class=" arrows material-icons md-36">
-            arrow_forward_ios
-            </span>
+        </div>
+        <div class="flex row center padding-bottom5">
+          <div class="full-width flex center">
+            <!-- <span class="material-icons md-36"> arrow_back_ios </span> -->
+
+            <div class="slide-section">
+              <img
+                class="display"
+                src="./bilder/projekt-bild1.png"
+                alt=""
+              />
+              <img
+                class=""
+                src="./bilder/projekt-bild2.png"
+                alt=""
+              />
+              <img
+                class=""
+                src="./bilder/projekt-bild3.png"
+                alt=""
+              />
+            </div>
+            <!-- <span class="arrows material-icons md-36"> arrow_forward_ios </span> -->
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+
+      <div class="black flex vertical center"><div class="border css-gradient"></div></div>
+      <p class="about-rubrik rubrik-section">Om mig:</p>
+      <div class="content-section flex center ">
+       
+
+      <div class="rubrik-section flex row center wrap">
+        
+        <div>
          
-         
+          <ul>
+            <li>Namn: &ensp;Olof Wallgren</li>
+            <br />
+            <li>
+              Ålder : &ensp; <span id="age">33</span>  
+            </li>
+            <br />
+            <li>Utbildning: &ensp; Front-End Developer på Medieinstitutet i Göteborg</li>
+            <br />
+            <li>Kunskaper:&ensp; Css Grid</li>
+          </ul>
           
-            
-            
-
-
-     
-            
-            
-           
-    
-            
-      </body>
-      </html>
-
-            
-            
-            
-            
-            
-              
-              
-                
-             
-                  
-              
-         
+        </div>
+       
+        <div class="portrait-container">
+          <img class="portrait-img" src="./bilder/misjälv.jpg" alt="">
+          
+        </div>
+        <div class="full-width"><button class="button-zoom">Mer Info</button> </div>
+        
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

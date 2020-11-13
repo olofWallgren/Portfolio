@@ -1,0 +1,26 @@
+/*för pulserande gradient-bakrund*/
+
+.css-gradient {
+    background: linear-gradient(424deg, #ffffff,  #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradientanimation 22s ease infinite;
+    -moz-animation: gradientanimation 22s ease infinite;
+    animation: gradientanimation 5s ease infinite;
+}
+
+@-webkit-keyframes gradientanimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientanimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientanimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
