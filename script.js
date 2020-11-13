@@ -19,9 +19,7 @@ function addEventListeners(){
 }
 
 function testLog(){
-    // let infoText = document.getElementById('textInfo')
     document.getElementById("textInfo").classList.toggle("none-display");
-//    infoText.classList.remove('diplsay')
-//     // infoText.classList.add('display')
-//     console.log('ejrfernfe')
+    
+
 }
