@@ -16,8 +16,9 @@
     align-items: center;
 }
 .wrap{
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
 }
+
 .margin-top{
     margin-top:0.5rem;
 }

@@ -1,0 +1,65 @@
+@media(max-width: 600px){
+     h1{ 
+        font-size: 35px;
+        
+    }
+    .font-mobile{
+        font-size: 12px;
+    }
+    .menu-bar{
+        
+    }
+    .button-hero{
+        
+    }
+    .about-rubrik{
+        padding-left:0;
+        text-align: center;
+    }
+    .rubrik-section{
+        font-size: 2rem;
+    }
+    p{
+        text-align: center;
+    }
+    .info-button-div{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    ul{
+        padding: 0;
+        font-size: 16px;
+        width: 100%;
+       
+    }
+    .ul-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+       
+        
+        
+        
+    }
+    .wrap-normal{
+        flex-wrap:wrap;
+    }
+}
+@media(max-width:370px){
+    h1{ 
+        font-size: 30px;
+        
+    }
+    .font-mobile{
+        font-size: 10px;
+    }
+    .wrap-normal{
+        flex-wrap: wrap;
+    }
+
+}
